@@ -1,0 +1,18 @@
+<form (ngSubmit)="saveCharacter()">
+  <input
+    name="name"
+    class="form-control mb-2"
+    type="text"
+    placeholder="Name"
+    [(ngModel)]="character.name"
+  />
+  <input
+    class="form-control mb-2"
+    type="number"
+    placeholder="Power"
+    name="power"
+    [(ngModel)]="character.power"
+  />
+
+  <button class="btn btn-primary">Add Character</button>
+</form>
